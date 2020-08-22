@@ -10,7 +10,7 @@ ONNXをC++/CLI環境で利用するサンプルです．
 
 
 
-##利用環境  
+## 利用環境  
 - Windows 10 
 - GeForce 1660ti 
   
@@ -53,30 +53,28 @@ ONNXをC++/CLI環境で利用するサンプルです．
 
 参考1 : https://www.kkaneko.jp/tools/win/pytorch.html
 参考2 : https://qiita.com/hey_gt/items/cabf4dce9d8e39a5b4d4
-
-
+  
+  
 ## 準備4 Visual Studio 2019 コミュニティ インストール  
 - 本家のページよりコミュニティ版のインストーラをDLしてインストール
   - C++によるデスクトップ開発にチェック
   - v142 ビルド ツール (14.27) の C++/CLI サポートにもチェック
   
   
-  
 ## 実行方法 (VAEの学習)
 - vae_mnist_pytorchフォルダにて 「$python vae_mnist.py」とすると学習が始まる
 - モデルは「model_fin.pth」というファイルに書き出される
 - 学習後「$python vae_mnist_export_onnx.py」とすると，model_fin.pthがONNX形式で出力される
-
+  
+  
 ## ONNXファイルの確認
-- Neutron (https://www.electronjs.org/apps/netron)を利用すると，モデルの構造や入出力層の名前を確認できる
+- Neutron (https://www.electronjs.org/apps/netron )を利用すると，モデルの構造や入出力層の名前を確認できる
   
   
 ## 実行方法 (C++/CLIによる可視化)
 - Visual Studio 2019により，OnnxSampleOnCppCLI.slnを開く
 - ./OnnxForCppCLI\OnnxSampleOnCppCLIフォルダに上記のonnxをコピーする（このリポジトリではコピー済み）
 - x64, Releaseモードでコンパイルし実行
-  
-  
   
   
 ## C++/CLIでONNX用のプロジェクトを作る際にやったこと
