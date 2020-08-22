@@ -75,10 +75,18 @@ ONNXをC++/CLI環境で利用するサンプルです．
 - Visual Studio 2019により，OnnxSampleOnCppCLI.slnを開く
 - ./OnnxForCppCLI\OnnxSampleOnCppCLIフォルダに上記のonnxをコピーする（このリポジトリではコピー済み）
 - x64, Releaseモードでコンパイルし実行
+  
+  
+  
+  
+## C++/CLIでONNX用のプロジェクトを作る際にやったこと
+- プロジェクト新規作成から　CLRコンソールアプリ　を選択
+  - Formなどのダイアログを追加
+- プロジェクト > Nugetパッケージの管理 から Microsoft.ML.OnnxRuntime をインストール
+- プロジェクト > プロパティ を開いて，「リンカータブ > 全般」の追加のライブラリディレクトリに「../packages/Microsoft.ML.OnnxRuntime.1.4.0/runtimes/win-x64/native;%(AdditionalLibraryDirectories)」を追加
+- プロジェクト > プロパティ を開いて，「リンカータブ > 入力」の追加の依存ファイルに「onnxruntime.lib」をついか
+  - ↑なぜか手動で指定する必要があった
 
-## C++/CLIでONNX用のプロジェクトを作る際にやったこととはまったところ
-- 
-- 
 
 
 
