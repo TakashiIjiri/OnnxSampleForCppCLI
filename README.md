@@ -6,7 +6,7 @@ ONNXをC++/CLI環境で利用するサンプルです．
 2. 学習したモデルをONNX形式で掃き出し（Python + PyTorch），  
 3. C++CLI環境でONNXを読み込みVAEのデコーダを実行して手書き数字を出力します．  
 
-![img](https://github.com/TakashiIjiri/OnnxSampleForCppCLI/blob/master/fig.png)
+![img](https://github.com/TakashiIjiri/OnnxSampleForCppCLI/blob/master/fig.gif)
 
 
 
