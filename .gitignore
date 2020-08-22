@@ -10,7 +10,7 @@
 *.userosscache
 *.sln.docstates
 
-vae_mnist/data/MNIST/*
+vae_mnist_pytorch/data/MNIST/*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
