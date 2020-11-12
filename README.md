@@ -40,8 +40,8 @@ ONNXをC++/CLI環境で利用するサンプルです．
 - 準備5 パッケージのインストール （numpy, scikit-learn, matplotlib, opencv）
   - $python -m pip install -U numpy
   - $python -m pip install -U scikit-learn
-  - $pip install matplotlib
-  - $pip install opencv-python
+  - $python -m pip install matplotlib
+  - $python -m pip install opencv-python
 
 
 ## 準備3 PyTorchのインストール
